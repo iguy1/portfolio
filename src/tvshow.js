@@ -15,8 +15,12 @@ function TvShow(){
             <img src = {naruto} alt="Naruto" style = {{width:'500px', height:'auto'}}/>
             <h2>3.Game of Thrones</h2>
             <img src ={terrion} alt="Game of Thrones" style = {{width:'500px', height:'auto'}}/>
-            <Link to = "/"><button>Home</button></Link>
             <Link to = "/facts"><button>Back</button></Link>
+
+            <br />
+            <Link to = "/"><button>Home</button></Link>
+            <br />
+            <br />
             
         </div>
     )
