@@ -1,0 +1,16 @@
+.home{
+  background-color: aqua;
+  min-height: 100vh;
+  color:white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.sports{
+  background-color: lightgrey;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.tv-show{
+  background-color: lightblue;
+  font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,37 @@
+.newpage, .facts-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: #000000;
+  }
+  
+  h2, h3 {
+    color: #000000;
+  }
+  
+  p {
+    color: #000000;
+  }
+  
+  .link-button {
+    display: inline-block;
+    margin: 40px 0;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: right;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link-button:hover {
+    background-color: #0056b3;
+  }
