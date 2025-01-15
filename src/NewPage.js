@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import Ian from './images/IMG_0229.jpeg';
 import Iguy from './images/IMG_9559.jpeg';
@@ -22,7 +22,7 @@ function NewPage(){
             <Link to = "/projects"><button>Projects!!</button></Link>
             <br />
             <br />
-            <Link to = "/facts">Facts about me!</Link>
+            <Link to = "/facts"><button>Facts about ME!</button></Link>
             <br />
             <br />
             <Link to = "/vote"><button>Vote!!</button></Link>
@@ -45,30 +45,49 @@ function Facts(){
             <br />
             <Link to = "/tvshow"><button>TV Shows📺</button></Link>
             <br />
+            <br />
             <Link to = "/sports"><button>Sports🏈</button></Link>
             <br />
+            <br />
             <Link to = "/"><button>Home</button></Link>
+            <br />
+
 
         </div>
     );
 }
 
 function Vote(){
+    const [vote, setVote] = useState(null);
+    
+    const handleVote = (player)=>{
+        setVote(player);
+        alert(`${player} is the GOAT!`);
+    }
     return(
-        <div>
+        <div className = 'vote'>
             <h1>Vote for your favorite!</h1>
             <h2>Who is the better basketball player?</h2>
             <h3>Lebron Raymone James a.k.a The Glorious King</h3>
             <img src={lebron} alt="lebron" style = {{width:'500px', height:'auto'}}/>
-            {<button>Vote for Lebron!</button> }
+            {<button onClick={()=>handleVote('Lebron')}>Vote for Lebron!</button>}
             <h3>Michael Jordan</h3>
             <p>He was the GOAT for back in the day but now.....</p>
             <img src= {jordan} alt="mj" style = {{width:'500px', height:'auto'}}/>
-            {<button>Vote for Jordan!</button>}
+            {<button onClick={()=>handleVote('Jordan')}>Vote for Jordan!</button>}
             <br />
             <Link to = "/facts"><button>Back</button></Link>
             <br />
             <Link to = "/"><button>Home</button></Link>
+            {
+    
+                vote&&(
+                    <div>
+                    <h1>You voted for {vote}!</h1>
+                    <p>Thanks for voting</p>
+                    </div>
+                )
+            }
             
         </div>
     );
@@ -77,7 +96,7 @@ function Vote(){
 
 function Projects(){
     return(
-        <div>
+        <div className = 'projects'>
             <h1>Personal Projects</h1>
             <h2>Here are some of my projects!</h2>
             <h3>1. Personal Portfolio Page</h3>
