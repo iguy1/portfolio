@@ -49,6 +49,9 @@ function Facts(){
             <Link to = "/sports"><button>Sports🏈</button></Link>
             <br />
             <br />
+            <Link to = "/newpage"><button>Back</button></Link>
+            <br />
+            <br />
             <Link to = "/"><button>Home</button></Link>
             <br />
 
@@ -76,7 +79,7 @@ function Vote(){
             <img src= {jordan} alt="mj" style = {{width:'500px', height:'auto'}}/>
             {<button onClick={()=>handleVote('Jordan')}>Vote for Jordan!</button>}
             <br />
-            <Link to = "/facts"><button>Back</button></Link>
+            <Link to = "/newpage"><button>Back</button></Link>
             <br />
             <Link to = "/"><button>Home</button></Link>
             {
@@ -101,7 +104,7 @@ function Projects(){
             <h2>Here are some of my projects!</h2>
             <h3>1. Personal Portfolio Page</h3>
             <p>This is my first personal creation with many more exciting projects on the way!</p>
-            <Link to = "/facts"><button>Back</button></Link>
+            <Link to = "/newpage"><button>Back</button></Link>
             <br />
             <Link to = "/"><button>Home</button></Link>
             
