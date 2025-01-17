@@ -8,7 +8,7 @@ import './NewPage.css';
 import './App.css';
 
 
-
+ 
 function NewPage(){
     return(
         <div className = 'newpage'>
@@ -104,6 +104,8 @@ function Projects(){
             <h2>Here are some of my projects!</h2>
             <h3>1. Personal Portfolio Page</h3>
             <p>This is my first personal creation with many more exciting projects on the way!</p>
+            <h3>2. Loan Automorzation Calculator</h3>
+            <p>This was a school final project for my TypeScript class, written using a react-like framework created by professors.</p>
             <Link to = "/newpage"><button>Back</button></Link>
             <br />
             <Link to = "/"><button>Home</button></Link>
