@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.84a13650.css",
+    "main.js": "/portfolio/static/js/main.e2233105.js",
+    "static/media/lebron.gif": "/portfolio/static/media/lebron.dcdcf8fc61f447491a52.gif",
+    "static/media/jordan.gif": "/portfolio/static/media/jordan.9a3f1b6de718370a0f44.gif",
+    "static/media/lesean.gif": "/portfolio/static/media/lesean.f26549f22c7b7aefec29.gif",
+    "static/media/jimmy.gif": "/portfolio/static/media/jimmy.e546103d01475af8c047.gif",
+    "static/media/maxey.gif": "/portfolio/static/media/maxey.6e9c74eac8a7a90f568b.gif",
+    "static/media/naruto.gif": "/portfolio/static/media/naruto.b40e364497d52636eafb.gif",
+    "static/media/terrion.gif": "/portfolio/static/media/terrion.cd9472f398d4d341c1d9.gif",
+    "static/media/regularshow.gif": "/portfolio/static/media/regularshow.7f789de6ba0b224ac8f7.gif",
+    "static/media/exercise.gif": "/portfolio/static/media/exercise.2c90b784b483eb43786f.gif",
+    "static/media/learning.gif": "/portfolio/static/media/learning.fd29a3fdadaeed538217.gif",
+    "static/media/IMG_0229.jpeg": "/portfolio/static/media/IMG_0229.0245e59ea36b5774653c.jpeg",
+    "static/media/5eKX.gif": "/portfolio/static/media/5eKX.55ca12241da242de0eea.gif",
+    "index.html": "/portfolio/index.html",
+    "main.84a13650.css.map": "/portfolio/static/css/main.84a13650.css.map",
+    "main.e2233105.js.map": "/portfolio/static/js/main.e2233105.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84a13650.css",
+    "static/js/main.e2233105.js"
+  ]
+}
