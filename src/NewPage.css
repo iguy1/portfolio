@@ -5,15 +5,20 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: lightblue;
+    padding-top: 200px; /* Adjust this value to ensure content is not hidden behind the navbar */
+
   }
 
-  .facts{
+  .languages{
+
     font-family: 'Courier New', Courier, monospace;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgb(232, 181, 80);
+    padding-top: 200px; /* Adjust this value to ensure content is not hidden behind the navbar */
+
   }
   .projects{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
@@ -22,6 +27,8 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgb(232, 80, 80);
+    padding-top: 100px; /* Adjust this value to ensure content is not hidden behind the navbar */
+
   }
   .link-button{
     display: inline-block;
@@ -36,12 +43,15 @@
     transition: background-color 0.3s ease;
   }
   .vote{
+
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgb(80, 232, 80);
+    padding-top: 100px; /* Adjust this value to ensure content is not hidden behind the navbar */
+
   }
   
   h1 {

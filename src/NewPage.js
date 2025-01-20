@@ -42,9 +42,8 @@ function NewPage(){
 function Languages(){
     return(
         <div className = 'languages'>
-            <h1>FACTS ABOUT ME!</h1>
             
-            <h2>Languages!</h2>
+            <h1>Languages!</h1>
             <br />
             <h3>⚫Python</h3>
             <h3>⚫C language</h3>
