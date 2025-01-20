@@ -4,6 +4,8 @@ import Ian from './images/IMG_0229.jpeg';
 import Iguy from './images/IMG_9559.jpeg';
 import lebron from './images/lebron.gif';
 import jordan from './images/jordan.gif';
+import learning from './images/learning.gif';
+import exercise from './images/exercise.gif';
 import './NewPage.css';
 import './App.css';
 
@@ -19,43 +21,36 @@ function NewPage(){
             <img src={Ian} alt="Ian" style = {{width:'200px', height:'auto'}}/>
             <p>I am a Computer Science student at the University of Delaware.</p>
             <p>I love the power of creation that coding gives me!</p>
-            <Link to = "/projects"><button>Projects!!</button></Link>
             <br />
+            <h2>FACTS ABOUT ME!</h2>
+            <h3>Hi!! My name is Ian Guy and I am 19 years old.</h3>
+            <p>My interest are learning new things and exercise!</p>
             <br />
-            <Link to = "/facts"><button>Facts about ME!</button></Link>
-            <br />
-            <br />
-            <Link to = "/vote"><button>Vote!!</button></Link>
-            <br />
-            <br />
-            <Link to = "/"><button>Home</button></Link>
+            <img src={learning} alt="learning" style = {{width:'200px', height:'auto'}}/>
+            <img src={exercise} alt="exercise" style = {{width:'200px', height:'auto'}}/>
 
+            <p>I am proficient in coding languages such as Python, Typescript, and C.</p>
+            <p>I am also learning React which I am using to make this website!    </p>
+            <br />
+            <Link to = "/sports"><button>My Favorite Sports Teams🏈</button></Link>
+            <br />
+            <br />
+            <Link to = "/tvshow"><button>My Favorite TV Shows</button></Link>
         </div>
     );
 }
 
-function Facts(){
+function Languages(){
     return(
-        <div className = 'facts'>
+        <div className = 'languages'>
             <h1>FACTS ABOUT ME!</h1>
-            <img src={Iguy} alt="Ian" style = {{width:'200px', height:'auto'}}/>
-            <p>My interest are learning new things and exercise!</p>
-            <p>I am proficient in coding languages such as Python, Typescript, and C.</p>
-            <p>I am also learning React which I am using to make this website!    </p>
+            
+            <h2>Languages!</h2>
             <br />
-            <Link to = "/tvshow"><button>TV Shows📺</button></Link>
-            <br />
-            <br />
-            <Link to = "/sports"><button>Sports🏈</button></Link>
-            <br />
-            <br />
-            <Link to = "/newpage"><button>Back</button></Link>
-            <br />
-            <br />
-            <Link to = "/"><button>Home</button></Link>
-            <br />
-
-
+            <h3>⚫Python</h3>
+            <h3>⚫C language</h3>
+            <h3>⚫Typescript</h3>
+            <h3>⚫Currently Learning React</h3>
         </div>
     );
 }
@@ -79,9 +74,7 @@ function Vote(){
             <img src= {jordan} alt="mj" style = {{width:'500px', height:'auto'}}/>
             {<button onClick={()=>handleVote('Jordan')}>Vote for Jordan!</button>}
             <br />
-            <Link to = "/newpage"><button>Back</button></Link>
             <br />
-            <Link to = "/"><button>Home</button></Link>
             {
     
                 vote&&(
@@ -106,12 +99,10 @@ function Projects(){
             <p>This is my first personal creation with many more exciting projects on the way!</p>
             <h3>2. Loan Automorzation Calculator</h3>
             <p>This was a school final project for my TypeScript class, written using a react-like framework created by professors.</p>
-            <Link to = "/newpage"><button>Back</button></Link>
-            <br />
-            <Link to = "/"><button>Home</button></Link>
+      
             
         </div>
     )
 }
 
-export {NewPage,Facts,Vote,Projects};
+export {NewPage,Languages,Vote,Projects};

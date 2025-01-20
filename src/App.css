@@ -1,16 +1,62 @@
-.home{
+.home {
   background-color: aqua;
-  min-height: 100vh;
-  color:white;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.sports{
+.home h1{
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+
+
+
+.sports {
   background-color: lightgrey;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.tv-show{
+.tv-show {
   background-color: lightblue;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.vote {
+  background-color: lightyellow;
+  font-family: 'Arial', sans-serif;
+}
+
+.newpage {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.languages {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(232, 181, 80);
+}
+
+.languages h1{
+  font-size: 2rem;
+  margin-bottom: 200px;
+}
+
+.projects {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(232, 80, 80);
 }
