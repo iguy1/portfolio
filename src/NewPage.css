@@ -1,6 +1,6 @@
 .newpage{
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -12,23 +12,25 @@
   .languages{
 
     font-family: 'Courier New', Courier, monospace;
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgb(232, 181, 80);
     padding-top: 200px; /* Adjust this value to ensure content is not hidden behind the navbar */
+    height:100vh;
+    text-align: center;
 
   }
   .projects{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgb(232, 80, 80);
     padding-top: 100px; /* Adjust this value to ensure content is not hidden behind the navbar */
-
+    height:100vh
   }
   .link-button{
     display: inline-block;
@@ -45,13 +47,15 @@
   .vote{
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgb(80, 232, 80);
-    padding-top: 100px; /* Adjust this value to ensure content is not hidden behind the navbar */
-
+    padding-top: 100px; /* Adjust this value to ensure content is not hidden behind the navbar */    background-size: cover; /* Ensure the image covers the entire background */
+    height:300vh;
+    width:600vw;
+    
   }
   
   h1 {
