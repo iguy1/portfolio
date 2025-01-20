@@ -100,9 +100,7 @@ function Projects(){
             <h3>2. Loan Automorzation Calculator</h3>
             <a href= "https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/" target = "blank" rel="noopener noreferrer">Loan Automorzation Calculator</a>
             <p>This was a school final project for my TypeScript class, written using a react-like framework created by professors.</p>
-            <Link to = "/newpage"><button>Back</button></Link>
-            <br />
-            <Link to = "/"><button>Home</button></Link>
+            
             
         </div>
     )
