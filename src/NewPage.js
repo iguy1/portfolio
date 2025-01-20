@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import Ian from './images/IMG_0229.jpeg';
-import Iguy from './images/IMG_9559.jpeg';
 import lebron from './images/lebron.gif';
 import jordan from './images/jordan.gif';
 import learning from './images/learning.gif';
