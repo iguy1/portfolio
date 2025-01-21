@@ -27,9 +27,6 @@ function NewPage(){
             <br />
             <img src={learning} alt="learning" style = {{width:'200px', height:'auto'}}/>
             <img src={exercise} alt="exercise" style = {{width:'200px', height:'auto'}}/>
-
-            <p>I am proficient in coding languages such as Python, Typescript, and C.</p>
-            <p>I am also learning React which I am using to make this website!    </p>
             <br />
             <Link to = "/sports"><button>My Favorite Sports Teams🏈</button></Link>
             <br />
@@ -46,8 +43,11 @@ function Languages(){
             <h1>Languages!</h1>
             <br />
             <h3>⚫Python</h3>
+            <br />
             <h3>⚫C language</h3>
+            <br />
             <h3>⚫Typescript</h3>
+            <br />
             <h3>⚫Currently Learning React</h3>
         </div>
     );
@@ -95,11 +95,14 @@ function Projects(){
             <h2>Here are some of my projects!</h2>
             <h3>1. Personal Portfolio Page</h3>
             <p>This is my first personal creation with many more exciting projects on the way!</p>
+            <p>This website was created using React.</p>
             <h3>2. Loan Automorzation Calculator</h3>
             <a href= "https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/" target = "blank" rel="noopener noreferrer">Loan Automorzation Calculator</a>
-            <p>This was a school final project for my TypeScript class, written using a react-like framework created by professors.</p>
-            
-            
+            <p>This was a school final project for my TypeScript class, written using a react-like framework.</p>
+            <br />
+            <h3>3. Github account!</h3>
+            <p>You can check out my project repositories in the link below.</p>
+            <a href ="https://github.com/iguy1" target = "blank" rel="noopener noreferrer">Check out my GitHub!</a>            
         </div>
     )
 }
