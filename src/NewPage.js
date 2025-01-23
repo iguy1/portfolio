@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
 import Ian from './images/IMG_0229.jpeg';
 import lebron from './images/lebron.gif';
 import jordan from './images/jordan.gif';
@@ -28,10 +27,6 @@ function NewPage(){
             <img src={learning} alt="learning" style = {{width:'200px', height:'auto'}}/>
             <img src={exercise} alt="exercise" style = {{width:'200px', height:'auto'}}/>
             <br />
-            <Link to = "/sports"><button>My Favorite Sports Teams🏈</button></Link>
-            <br />
-            <br />
-            <Link to = "/tvshow"><button>My Favorite TV Shows</button></Link>
         </div>
     );
 }
@@ -41,6 +36,10 @@ function Languages(){
         <div className = 'languages'>
             
             <h1>Languages!</h1>
+            <h2>I learned most of these languages through the University Of Delaware. I have taken CISC108,181, and 210.</h2>
+            <br />
+            <h2>Here is a link to the classes if you are interested in what I have learned.</h2>
+            <a href ="https://catalog.udel.edu/preview_program.php?catoid=90&poid=78144">Courses</a>
             <br />
             <h3>⚫Python</h3>
             <br />

@@ -44,6 +44,9 @@
     color:blue;
     text-decoration: underline;
 }
+.navbar-links li a:visited {
+    color: green; /* Change this to your desired visited link color */
+  }
 
 .navbar-toggle{
     display:none;
@@ -56,16 +59,8 @@
 
 @media screen and (max-width:768px){
     .navbar-links{
-        flex-direction: column;
         display:none;
-        position:absolute;
-        top:60px;
-        right:20px;
-        background-color: #444;
-        border-radius:5px;
-        padding:10px 20px;
-        width:200px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
 
     }
 
@@ -77,11 +72,11 @@
         display:block;
     }
 
-    .navbar-links li{
+  /*  .navbar-links li{
         margin-bottom:10px;
     }
 
     .navbar-links li:last-child{
         margin-bottom:0;
-    }
+    }*/
 }

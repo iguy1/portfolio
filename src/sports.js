@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Lesean from './images/lesean.gif';
 import Maxey from './images/maxey.gif';
 import jimmy from './images/jimmy.gif';
+import Saquan from './images/IMG_1582.gif'
 import './App.css';
 
 function Sports(){
@@ -10,7 +10,7 @@ function Sports(){
         <div className = 'sports'>
             <h1>These are my favorite sport teams!</h1>
             <h2>1.Eagles</h2>
-            <img src={Lesean} alt="McCoy" style = {{width:'500px', height:'auto'}}/>
+            <img src={Saquan} alt="Barkley" style = {{width:'500px', height:'auto'}}/>
             <h2>2.Phillies</h2>
             <img src = {jimmy} alt="Phils" style = {{width:'500px', height:'auto'}}/>
             <h2>3.Sixers</h2>
