@@ -15,7 +15,7 @@ function Navbar() {
           <div className="navbar-logo">
             <Link to="/">Portfolio</Link>
           </div>
-          <ul className="navbar-links">
+          <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
             <li><Link to="/newpage">Personal Page </Link></li>
             <li><Link to="/languages">Coding Languages</Link></li>
             <li><Link to="/vote">Vote</Link></li>
