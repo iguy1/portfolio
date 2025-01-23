@@ -44,9 +44,8 @@
     text-decoration: underline;
 }
 .navbar-links li a:visited {
-    color: green; /* Change this to your desired visited link color */
-  }
-
+    color: green; 
+}
 .navbar-toggle{
     display:none;
     font-size:1.5rem;
@@ -63,12 +62,12 @@
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     background-color: black; 
     }
 
-    .navbar-links.active{
+    .navbar-links.open{
         display:flex;
     }
 
@@ -76,12 +75,14 @@
         display:block;
     }
 
-    /*.navbar-links li{
+    .navbar-links li{
+        padding:10px 0;
+        text-align: center;
         margin-bottom:10px;
     }
 
     .navbar-links li:last-child{
         margin-bottom:0;
     }
-    */
+    
 }
