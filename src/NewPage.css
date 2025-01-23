@@ -6,7 +6,7 @@
     border-radius: 10px;
     background-color: lightblue;
     padding-top: 200px; /* Adjust this value to ensure content is not hidden behind the navbar */
-    height:100vh;
+    height:300vh;
   }
 
   .languages{

@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log('Button clicked, current state:', isOpen);
     setIsOpen(!isOpen);
   };
     return (
@@ -23,7 +24,8 @@ function Navbar() {
             <li><Link to = "/sports">Sports</Link></li>
             <li><Link to = "/tvshow">TV Shows</Link></li>
           </ul>
-          <button className="navbar-toggle" onClick={toggleMenu}>☰</button>
+          <button className="navbar-toggle" onClick={toggleMenu}aria-label="Toggle Navigation" 
+          >☰</button>
         </div>
       </nav>
     );
