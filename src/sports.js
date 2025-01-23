@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Maxey from './images/maxey.gif';
 import jimmy from './images/jimmy.gif';
 import Saquan from './images/IMG_1582.gif'
@@ -16,12 +15,7 @@ function Sports(){
             <h2>3.Sixers</h2>
             <img src = {Maxey} alt="Sixers" style = {{width:'500px', height:'auto'}}/>
             <p>.....Yeah there all Philadelphia teams, I'm from Delaware what did you expect🤷🏿</p>
-            <Link to = "/facts"><button>Back</button></Link>
-            <br />  
-            <br />  
-            <Link to = "/"><button>Home</button></Link>
-            <br />
-            <br />
+           
            
         
         </div>
