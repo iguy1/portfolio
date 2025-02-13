@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from './images/5eKX.gif'
 
 function Navbar() {
 const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +15,10 @@ const [isOpen, setIsOpen] = useState(false);
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-logo">
-            <Link to="/">Portfolio</Link>
-          </div>
+          <Link to="/">
+            <img src={logo} alt="Logo" className="logo-image" sytle ={{width:"500px"}} />
+            <span className="logo-text"></span>
+          </Link>          </div>
           <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
             <li><Link to="/newpage">Personal Page </Link></li>
             <li><Link to="/languages">Coding Languages</Link></li>

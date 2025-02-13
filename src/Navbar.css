@@ -19,13 +19,27 @@
     width:100px;
 }
 
-.navbar-logo a{
+.navbar-logo{
+    display:flex;
+    align-items:center;
+    margin-right:20px;
+  }
+  
+  .navbar-logo a {
     text-decoration: none;
-    color:white;
-    font-size:1.5rem;
-    font-size:bold;
+    color: blue;
+    font-size: .5rem;
+    font-weight: bold;
+  }
+  .logo-image{
+    height:50px;
+    width:auto;
+    margin-right: 5px;
+  }
 
-}
+  .logo-text{
+    color:white;
+  }
 .navbar-links{
     display:flex;
     list-style: none;
