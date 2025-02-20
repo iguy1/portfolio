@@ -28,7 +28,7 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: rgb(232, 80, 80);
+    background-color:white;
     padding-top: 100px; /* Adjust this value to ensure content is not hidden behind the navbar */
     height:500vh
   }

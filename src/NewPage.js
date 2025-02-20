@@ -104,7 +104,7 @@ function Projects(){
             <p>I created this react application for a school club I recently joined. I used react to create this website.</p>
             <p>I definitely saw improvement in my react skills. I created this project so that our club will have an easy to navigate webpage for current members and people intersted in joining.</p>
             <br />
-            <h3>4. Personal Photograhpy Website</h3>
+            <h3>4. Personal Photography Website</h3>
             <a href= "https://iguy1.github.io/iguypictures" target = "blank" rel="noopener noreferrer">Photography website</a>
             <p>I created this react application to upload my personal photograpy ventures that I take at the University of Delaware.</p>
             <h3>5. Github account!</h3>
