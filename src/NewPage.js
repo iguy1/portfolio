@@ -36,7 +36,7 @@ function Languages(){
         <div className = 'languages'>
             
             <h1>Languages!</h1>
-            <h2>I learned most of these languages through the University Of Delaware. I have taken CISC108,181, and 210.</h2>
+            <h2>I learned most of these languages through the University Of Delaware. I have taken Introduction to Computer Science, Object Oriented Programming, and Intro to Systems Programming.</h2>
             <br />
             <h2>Here is a link to the classes if you are interested in what I have learned.</h2>
             <a href ="https://catalog.udel.edu/preview_program.php?catoid=90&poid=78144">Courses</a>
@@ -47,7 +47,7 @@ function Languages(){
             <br />
             <h3>⚫Typescript</h3>
             <br />
-            <h3>⚫Currently Learning React</h3>
+            <h3>⚫Currently Learning React, C++, and Assembly Language</h3>
         </div>
     );
 }
