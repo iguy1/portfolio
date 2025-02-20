@@ -106,7 +106,7 @@ function Projects(){
             <br />
             <h3>4. Personal Photography Website</h3>
             <a href= "https://iguy1.github.io/iguypictures" target = "blank" rel="noopener noreferrer">Photography website</a>
-            <p>I created this react application to upload my personal photograpy ventures that I take at the University of Delaware.</p>
+            <p>I created this react application to upload my personal photography ventures that I take at the University of Delaware.</p>
             <h3>5. Github account!</h3>
             <p>You can check out my project repositories in the link below.</p>
             <a href ="https://github.com/iguy1" target = "blank" rel="noopener noreferrer">Check out my GitHub!</a>
