@@ -99,7 +99,7 @@ function Projects(){
             <a href= "https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/" target = "blank" rel="noopener noreferrer">Loan Automorzation Calculator</a>
             <p>This was a school final project for my TypeScript class, written using a react-like framework.</p>
             <br />
-            <h3>3. Website for my Club</h3> 
+            <h3>3. Society For Professional Computing</h3> 
             <a href= "https://iguy1.github.io/compsciclub" target = "blank" rel="noopener noreferrer">Club website</a>
             <p>I created this react application for a school club I recently joined. I used react to create this website.</p>
             <p>I definitely saw improvement in my react skills. I created this project so that our club will have an easy to navigate webpage for current members and people intersted in joining.</p>
