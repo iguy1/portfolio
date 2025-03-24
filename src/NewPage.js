@@ -32,25 +32,55 @@ function NewPage(){
 }
 
 function Languages(){
-    return(
-        <div className = 'languages'>
-            
-            <h1>Languages!</h1>
-            <h2>I learned most of these languages through the University Of Delaware. I have taken Introduction to Computer Science, Object Oriented Programming, and Intro to Systems Programming.</h2>
-            <br />
-            <h2>Here is a link to the classes if you are interested in what I have learned.</h2>
-            <a href ="https://catalog.udel.edu/preview_program.php?catoid=90&poid=78144">Courses</a>
-            <br />
-            <h3>⚫Python</h3>
-            <br />
-            <h3>⚫C language</h3>
-            <br />
-            <h3>⚫Typescript</h3>
-            <br />
-            <h3>⚫Currently Learning React, C++, and Assembly Language</h3>
-        </div>
-    );
-}
+        return (
+          <section className="languages">
+            <h1>My Tech Stack</h1>
+            <h2>
+              These are the programming languages and technologies I've learned through my journey at the University of Delaware and beyond.
+            </h2>
+            <p>
+              I have taken courses such as Introduction to Computer Science, Object-Oriented Programming, and Intro to Systems Programming.
+              I am currently taking Data Structures and Algorithms, which is a challenging yet rewarding course. I am also taking Machine Orginazation and Assembly Language, which is a fascinating subject that delves into the inner workings of computers.
+            </p>
+            <a
+              href="https://catalog.udel.edu/preview_program.php?catoid=90&poid=78144"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Courses
+            </a>
+            <div className="tech-stack">
+              <div className="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                <p>Python</p>
+              </div>
+              <div className="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Language" />
+                <p>C Language</p>
+              </div>
+              <div className="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+                <p>TypeScript</p>
+              </div>
+              <div className="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                <p>React</p>
+              </div>
+              <div className="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                <p>C++</p>
+              </div>
+              <div className="tech-item">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="Assembly" />
+  <p>Assembly</p>
+</div>
+            </div>
+          </section>
+        );
+      }
+      
+    
+
 
 function Vote(){
     const [vote, setVote] = useState(null);
@@ -87,32 +117,62 @@ function Vote(){
 
 }
 
-function Projects(){
-    return(
-        <div className = 'projects'>
-            <h1>Personal Projects</h1>
-            <h2>Here are some of my projects!</h2>
-            <h3>1. Personal Portfolio Page</h3>
+function Projects() {
+    return (
+      <section className="projects">
+        <h1>Personal Projects</h1>
+        <h2>Here are some of my projects!</h2>
+        <div className="project-grid">
+          <div className="project-card">
+            <h3>Personal Portfolio Page</h3>
             <p>This is my first personal creation with many more exciting projects on the way!</p>
             <p>This website was created using React.</p>
-            <h3>2. Loan Automorzation Calculator</h3>
-            <a href= "https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/" target = "blank" rel="noopener noreferrer">Loan Automorzation Calculator</a>
-            <p>This was a school final project for my TypeScript class, written using a react-like framework.</p>
-            <br />
-            <h3>3. Society For Professional Computing</h3> 
-            <a href= "https://iguy1.github.io/compsciclub" target = "blank" rel="noopener noreferrer">Club website</a>
-            <p>I created this react application for a school club I recently joined. I used react to create this website.</p>
-            <p>I definitely saw improvement in my react skills. I created this project so that our club will have an easy to navigate webpage for current members and people intersted in joining.</p>
-            <br />
-            <h3>4. Personal Photography Website</h3>
-            <a href= "https://iguy1.github.io/iguypictures" target = "blank" rel="noopener noreferrer">Photography website</a>
-            <p>I created this react application to upload my personal photography ventures that I take at the University of Delaware.</p>
-            <h3>5. Github account!</h3>
-            <p>You can check out my project repositories in the link below.</p>
-            <a href ="https://github.com/iguy1" target = "blank" rel="noopener noreferrer">Check out my GitHub!</a>
-
+          </div>
+          <div className="project-card">
+            <h3>Loan Amortization Calculator</h3>
+            <a
+              href="https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Loan Amortization Calculator
+            </a>
+            <p>This was a school final project for my TypeScript class, written using a React-like framework.</p>
+          </div>
+          <div className="project-card">
+            <h3>Society For Professional Computing</h3>
+            <a
+              href="https://iguy1.github.io/compsciclub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Club Website
+            </a>
+            <p>
+              I created this React application for a school club I recently joined. It provides an easy-to-navigate
+              webpage for current members and people interested in joining.
+            </p>
+          </div>
+          <div className="project-card">
+            <h3>Personal Photography Website</h3>
+            <a
+              href="https://iguy1.github.io/iguypictures"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Photography Website
+            </a>
+            <p>
+              I created this React application to upload my personal photography ventures at the University of Delaware.
+            </p>
+          </div>
+        
         </div>
-    )
-}
+      </section>
+    );
+  }
+  
+
+
 
 export {NewPage,Languages,Vote,Projects};

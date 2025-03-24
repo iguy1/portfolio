@@ -13,8 +13,10 @@ function Home() {
     <section className="home" id="home">
       <div className="home">
         <h1 className="home">Welcome to my Personal Portfolio Page!</h1>
+        
         <h2>What's up!!</h2>
-        <h3>Welcome to my personal portfolio page! Here you can learn more about me and my interests.</h3>
+        <br />
+        <h2>Welcome to my personal portfolio page! Here you can learn more about me and my interests.</h2>
         <p>My name is Ian Guy, an aspiring software engineer passionate about creating innovative solutions through the use of technology.</p>
         <img src={webdev} alt="webdev" style={{ width: '600px' }} />
       </div>
@@ -27,7 +29,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Home />} />
         <Route path="/newpage" element={<NewPage />} />
         <Route path="/languages" element={<Languages />} />
         <Route path="/vote" element={<Vote />} />
