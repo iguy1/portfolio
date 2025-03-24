@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9dd3bec2.css",
-    "main.js": "/portfolio/static/js/main.361b845a.js",
+    "main.css": "/portfolio/static/css/main.08f4e36b.css",
+    "main.js": "/portfolio/static/js/main.a6e704b4.js",
     "static/js/156.76d4ed6a.chunk.js": "/portfolio/static/js/156.76d4ed6a.chunk.js",
     "static/media/lebron.gif": "/portfolio/static/media/lebron.dcdcf8fc61f447491a52.gif",
-    "static/media/p.gif": "/portfolio/static/media/p.516752c714c75fce9e38.gif",
     "static/media/jordan.gif": "/portfolio/static/media/jordan.9a3f1b6de718370a0f44.gif",
     "static/media/IMG_1582.gif": "/portfolio/static/media/IMG_1582.eccf94696a0569c8c898.gif",
     "static/media/jimmy.gif": "/portfolio/static/media/jimmy.e546103d01475af8c047.gif",
@@ -14,15 +13,16 @@
     "static/media/regularshow.gif": "/portfolio/static/media/regularshow.7f789de6ba0b224ac8f7.gif",
     "static/media/exercise.gif": "/portfolio/static/media/exercise.2c90b784b483eb43786f.gif",
     "static/media/learning.gif": "/portfolio/static/media/learning.fd29a3fdadaeed538217.gif",
+    "static/media/IMG_1728.png": "/portfolio/static/media/IMG_1728.cdc4c7d33345f3d57018.png",
     "static/media/IMG_0229.jpeg": "/portfolio/static/media/IMG_0229.0245e59ea36b5774653c.jpeg",
     "static/media/5eKX.gif": "/portfolio/static/media/5eKX.55ca12241da242de0eea.gif",
     "index.html": "/portfolio/index.html",
-    "main.9dd3bec2.css.map": "/portfolio/static/css/main.9dd3bec2.css.map",
-    "main.361b845a.js.map": "/portfolio/static/js/main.361b845a.js.map",
+    "main.08f4e36b.css.map": "/portfolio/static/css/main.08f4e36b.css.map",
+    "main.a6e704b4.js.map": "/portfolio/static/js/main.a6e704b4.js.map",
     "156.76d4ed6a.chunk.js.map": "/portfolio/static/js/156.76d4ed6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dd3bec2.css",
-    "static/js/main.361b845a.js"
+    "static/css/main.08f4e36b.css",
+    "static/js/main.a6e704b4.js"
   ]
 }
