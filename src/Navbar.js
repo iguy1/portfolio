@@ -15,7 +15,7 @@ function Navbar() {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/portfolio" className="navbar-logo-link">
-          <img src={newlogo} alt="Logo" className="logo-image" style={{ width: '100px' }} />            <span className="logo-text"></span>
+          <img src={newlogo} alt="Logo" className="logo-image" style={{ width: '50px' }} />            <span className="logo-text"></span>
           </Link>
         </div>
         <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>

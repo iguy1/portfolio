@@ -9,29 +9,32 @@
     }
 }
 
+
 .navbar {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Align items at the top */
-    align-items: center;
-    padding: 10px 0;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow to the left of the navbar */
-    position: fixed;
-    height: 100vh; /* Make the navbar span the full height of the page */
-    width: 200px; /* Set the width of the navbar */
-    top: 0;
-    right: 0; /* Position the navbar on the right side */
-    z-index: 1000;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Space out items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: rgb(0, 0, 0); /* Set background color */
+    color: white; /* Set text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow below the navbar */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0px; /* Align it to the top of the page */
+    left: 0; /* Align it to the left of the page */
+    width: 100%; /* Make it span the full width of the page */
+    height: 60px; /* Set the height of the navbar */
+    z-index: 1000; /* Ensure it stays above other elements */
     animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
 }
 
+
 .navbar-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    width: 100%;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align all items to the left */
+    width: 100%; /* Make it span the full width of the navbar */
 }
 
 .navbar-logo {
@@ -46,33 +49,35 @@
     font-size: 1rem;
     font-weight: bold;
 }
-
 .logo-image {
-    height: 100px; /* Set the height of the image */
-    width: 100px; /* Set the width of the image */
-    border-radius: 50%; /* Make the image circular */
+    top:10px;
+    height: 80px; /* Reduce the height of the logo */
+    width: 80px; /* Reduce the width of the logo */
+    border-radius: 50%; /* Keep the circular shape */
     object-fit: cover; /* Ensure the image fits within the circle */
     border: 2px solid white; /* Optional: Add a border around the circle */
-  }
+}
 
 .logo-text {
     color: white;
 }
 
+
 .navbar-links {
     display: flex;
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: row; /* Arrange links horizontally */
     list-style: none;
-    gap: 15px; /* Add spacing between links */
+    gap: 20px; /* Add spacing between links */
     margin: 0;
     padding: 0;
-    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation to links */
+    justify-content: flex-start; /* Align links to the left */
 }
+
 
 .navbar-links li a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduce the font size */
     transition: color 0.3s ease;
 }
 

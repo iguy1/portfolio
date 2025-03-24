@@ -118,59 +118,60 @@ function Vote(){
 }
 
 function Projects() {
-    return (
-      <section className="projects">
-        <h1>Personal Projects</h1>
-        <h2>Here are some of my projects!</h2>
-        <div className="project-grid">
-          <div className="project-card">
-            <h3>Personal Portfolio Page</h3>
-            <p>This is my first personal creation with many more exciting projects on the way!</p>
-            <p>This website was created using React.</p>
-          </div>
-          <div className="project-card">
-            <h3>Loan Amortization Calculator</h3>
-            <a
-              href="https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Loan Amortization Calculator
-            </a>
-            <p>This was a school final project for my TypeScript class, written using a React-like framework.</p>
-          </div>
-          <div className="project-card">
-            <h3>Society For Professional Computing</h3>
-            <a
-              href="https://iguy1.github.io/compsciclub"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Club Website
-            </a>
-            <p>
-              I created this React application for a school club I recently joined. It provides an easy-to-navigate
-              webpage for current members and people interested in joining.
-            </p>
-          </div>
-          <div className="project-card">
-            <h3>Personal Photography Website</h3>
-            <a
-              href="https://iguy1.github.io/iguypictures"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Photography Website
-            </a>
-            <p>
-              I created this React application to upload my personal photography ventures at the University of Delaware.
-            </p>
-          </div>
+        return (
+            <section className="projects">
+              <h1>Personal Projects</h1>
+              <h2>Here are some of my projects!</h2>
+              <div className="project-grid">
+                <div className="project-card">
+                  <h3>Personal Portfolio Page</h3>
+                  <p>This is my first personal creation with many more exciting projects on the way!</p>
+                  <p>This website was created using React.</p>
+                </div>
+                <div className="project-card">
+                  <h3>Loan Amortization Calculator</h3>
+                  <a
+                    href="https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Loan Amortization Calculator
+                  </a>
+                  <p>This was a school final project for my TypeScript class, written using a React-like framework.</p>
+                </div>
+                <div className="project-card">
+                  <h3>Personal Photography Website</h3>
+                  <a
+                    href="https://iguy1.github.io/iguypictures"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Photography Website
+                  </a>
+                  <p>
+                    I created this React application to upload my personal photography ventures at the University of Delaware.
+                  </p>
+                </div>
+                <div className="project-card">
+                  <h3>Society For Professional Computing</h3>
+                  <a
+                    href="https://iguy1.github.io/compsciclub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Club Website
+                  </a>
+                  <p>
+                    I created this React application for a school club I recently joined. It provides an easy-to-navigate
+                    webpage for current members and people interested in joining.
+                  </p>
+                </div>
+              
+              </div>
+            </section>
+          );
+        }
         
-        </div>
-      </section>
-    );
-  }
   
 
 

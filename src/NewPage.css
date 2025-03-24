@@ -137,7 +137,6 @@
   font-family: 'Arial', sans-serif;
   margin: 0 auto;
   padding: 20px;
-  padding-top: 80px; /* Add space at the top to account for the navbar height */
   max-width: 1200px;
   text-align: center;
   background-color: #f9f9f9;
@@ -159,8 +158,8 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Add spacing between cards */
 }
 
 .project-card {
@@ -176,8 +175,6 @@
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 10px;
-  margin-top:20px;
-  margin-left:50px;
 }
 
 .project-card p {
