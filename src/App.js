@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 import webdev from './images/5eKX.gif';
 import { NewPage, Languages, Projects } from './NewPage';
 import './App.css';
@@ -16,8 +16,8 @@ function Home() {
         <h2>Computer Science Student</h2>
         <p>I'm Ian Guy, a Computer Science student at the University of Delaware passionate about technology and programming. I enjoy building clean, efficient, and user-friendly applications.</p>
         <div className="home-buttons">
-          <a href="/projects" className="btn">View My Projects</a>
-          <a href="/languages" className="btn">My Skills</a>
+          <Link to="/projects" className="btn">View My Projects</Link>
+          <Link to="/languages" className="btn">My Skills</Link>
           <a href="/Ian Guy Resume.pdf" className="btn download-btn" download>Download Resume</a>
         </div>
         <img src={webdev} alt="Web Development" />
