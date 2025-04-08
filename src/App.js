@@ -1,24 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import webdev from './images/5eKX.gif';
-import { NewPage, Languages, Vote, Projects } from './NewPage';
+import { NewPage, Languages, Projects } from './NewPage';
 import './App.css';
-import Sports from './sports';
-import TvShow from './tvshow';
 import Navbar from './Navbar';
 import './index.css';
 
 function Home() {
   return (
     <section className="home" id="home">
-      <div className="home">
-        <h1 className="home">Welcome to my Personal Portfolio Page!</h1>
-        
-        <h2>What's up!!</h2>
+      <div className="home-content">
         <br />
-        <h2>Welcome to my personal portfolio page! Here you can learn more about me and my interests.</h2>
-        <p>My name is Ian Guy, an aspiring software engineer passionate about creating innovative solutions through the use of technology.</p>
-        <img src={webdev} alt="webdev" style={{ width: '600px' }} />
+        <br />
+        <h1>Welcome to my Portfolio</h1>
+        <h2>Computer Science Student</h2>
+        <p>I'm Ian Guy, a Computer Science student at the University of Delaware passionate about technology and programming. I enjoy building clean, efficient, and user-friendly applications.</p>
+        <div className="home-buttons">
+          <a href="/projects" className="btn">View My Projects</a>
+          <a href="/languages" className="btn">My Skills</a>
+          <a href="/Ian Guy Resume.pdf" className="btn download-btn" download>Download Resume</a>
+        </div>
+        <img src={webdev} alt="Web Development" />
       </div>
     </section>
   );
@@ -27,16 +29,17 @@ function Home() {
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/portfolio" element={<Home />} />
-        <Route path="/newpage" element={<NewPage />} />
-        <Route path="/languages" element={<Languages />} />
-        <Route path="/vote" element={<Vote />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/sports" element={<Sports />} />
-        <Route path="/tvshow" element={<TvShow />} />
-      </Routes>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Home />} />
+          <Route path="/newpage" element={<NewPage />} />
+          <Route path="/languages" element={<Languages />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

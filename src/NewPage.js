@@ -1,179 +1,209 @@
 import React, {useState} from 'react';
 import Ian from './images/IMG_0229.jpeg';
-import lebron from './images/lebron.gif';
-import jordan from './images/jordan.gif';
 import learning from './images/learning.gif';
 import exercise from './images/exercise.gif';
 import './NewPage.css';
 import './App.css';
-
+import v0logo from './images/v0.png';
+import cursorlogo from './images/cursor.jpg';
+import clionlogo from './images/clion.png';
 
  
 function NewPage(){
     return(
         <div className = 'newpage'>
-            <h1>HI MY NAME IS IAN GUY!</h1>
-            <h2>Contact Information:</h2>
-            <h3> Email - ianguy015@gmail.com</h3>
-            <h3> Phone Number - 302-893-8963</h3>
-            <img src={Ian} alt="Ian" style = {{width:'200px', height:'auto'}}/>
-            <p>I am a Computer Science student at the University of Delaware.</p>
-            <p>I love the power of creation that coding gives me!</p>
-            <br />
-            <h2>FACTS ABOUT ME!</h2>
-            <h3>Hi!! My name is Ian Guy and I am 19 years old.</h3>
-            <p>My interest are learning new things and exercise!</p>
-            <br />
-            <img src={learning} alt="learning" style = {{width:'200px', height:'auto'}}/>
-            <img src={exercise} alt="exercise" style = {{width:'200px', height:'auto'}}/>
-            <br />
+            <h1>About Me</h1>
+            
+            <div className="about-section">
+                <div className="about-image">
+                    <img src={Ian} alt="Ian Guy" className="profile-image"/>
+                </div>
+                
+                <div className="about-content">
+                    <h2>Background</h2>
+                    <p>I am a Computer Science student at the University of Delaware, passionate about technology and software development. I enjoy the creative and problem-solving aspects of programming, which allow me to build innovative solutions.</p>
+                    
+                    <h2>Interests & Hobbies</h2>
+                    <p>Beyond coding, I'm dedicated to continuous learning and personal development. I maintain an active lifestyle through regular exercise, which helps me stay focused and energized for my studies and projects.</p>
+                    
+                    <div className="interests-images">
+                        <div className="interest-item">
+                            <img src={learning} alt="Learning" className="interest-image"/>
+                            <p>Continuous Learning</p>
+                        </div>
+                        <div className="interest-item">
+                            <img src={exercise} alt="Exercise" className="interest-image"/>
+                            <p>Fitness & Wellness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="contact-section">
+                <h2>Contact Information</h2>
+                <div className="contact-details">
+                    <div className="contact-item">
+                        <i className="contact-icon">📧</i>
+                        <p>Email: <a href="mailto:ianguy015@gmail.com">ianguy015@gmail.com</a></p>
+                    </div>
+                    <div className="contact-item">
+                        <i className="contact-icon">📱</i>
+                        <p>Phone: <a href="tel:302-893-8963">302-893-8963</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
 
 function Languages(){
-        return (
-          <section className="languages">
-            <h1>My Tech Stack</h1>
-            <h2>
-              These are the programming languages and technologies I've learned through my journey at the University of Delaware and beyond.
-            </h2>
-            <p>
-              I have taken courses such as Introduction to Computer Science, Object-Oriented Programming, and Intro to Systems Programming.
-              I am currently taking Data Structures and Algorithms, which is a challenging yet rewarding course. I am also taking Machine Orginazation and Assembly Language, which is a fascinating subject that delves into the inner workings of computers.
-            </p>
-            <a
-              href="https://catalog.udel.edu/preview_program.php?catoid=90&poid=78144"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Courses
-            </a>
-            <div className="tech-stack">
-              <div className="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-                <p>Python</p>
-              </div>
-              <div className="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Language" />
-                <p>C Language</p>
-              </div>
-              <div className="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-                <p>TypeScript</p>
-              </div>
-              <div className="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-                <p>React</p>
-              </div>
-              <div className="tech-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-                <p>C++</p>
-              </div>
-              <div className="tech-item">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="Assembly" />
-  <p>Assembly</p>
-</div>
-            </div>
-          </section>
-        );
-      }
-      
-    
-
-
-function Vote(){
-    const [vote, setVote] = useState(null);
-    
-    const handleVote = (player)=>{
-        setVote(player);
-        alert(`${player} is the GOAT!`);
-    }
     return(
-        <div className = 'vote'>
-            <h1>Vote for your favorite!</h1>
-            <h2>Who is the better basketball player?</h2>
-            <h3>Lebron Raymone James a.k.a The Glorious King</h3>
-            <img src={lebron} alt="lebron" style = {{width:'500px', height:'auto'}}/>
-            {<button onClick={()=>handleVote('Lebron')}>Vote for Lebron!</button>}
-            <h3>Michael Jordan</h3>
-            <p>He was the GOAT for back in the day but now.....</p>
-            <img src= {jordan} alt="mj" style = {{width:'500px', height:'auto'}}/>
-            {<button onClick={()=>handleVote('Jordan')}>Vote for Jordan!</button>}
-            <br />
-            <br />
-            {
-    
-                vote&&(
-                    <div>
-                    <h1>You voted for {vote}!</h1>
-                    <p>Thanks for voting</p>
-                    </div>
-                )
-            }
+        <div className = 'languages'>
+            <h1>My Tech Stack</h1>
+            <h2>Programming Languages</h2>
+            <p>Here are the programming languages I am familiar with:</p>
+            <div className="tech-stack">
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python" />
+                    <p>Python</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++" />
+                    <p>C++</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="C" />
+                    <p>C</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript" />
+                    <p>TypeScript</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="React" />
+                    <p>React</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="HTML" />
+                    <p>HTML</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS" />
+                    <p>CSS</p>
+                </div>
+            </div>
+            <h2>Frameworks & Tools</h2>
+            <p>Here are some frameworks and tools I use:</p>
             
+            <h3>IDEs & Code Editors</h3>
+            <div className="tech-stack">
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code" />
+                    <p>VS Code</p>
+                </div>
+                <div className="tech-item">
+                    <img src={clionlogo} alt="CLion" />
+                    <p>CLion</p>
+                </div>
+            </div>
+            
+            <h3>AI-Powered Development Tools</h3>
+            <div className="tech-stack">
+                <div className="tech-item">
+                    <img src={v0logo} alt="V0" />
+                    <p>V0</p>
+                </div>
+                <div className="tech-item">
+                    <img src={cursorlogo} alt="Cursor" />
+                    <p>Cursor</p>
+                </div>
+            </div>
+            
+            <h3>Version Control & Collaboration</h3>
+            <div className="tech-stack">
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png" alt="Git" />
+                    <p>Git</p>
+                </div>
+            </div>
         </div>
     );
-
 }
 
 function Projects() {
-        return (
-            <section className="projects">
-              <h1>Personal Projects</h1>
-              <h2>Here are some of my projects!</h2>
-              <div className="project-grid">
+    return (
+        <div className="projects">
+            <h1>My Projects</h1>
+            <h2>Here are some of the projects I've worked on:</h2>
+            <div className="project-grid">
                 <div className="project-card">
-                  <h3>Personal Portfolio Page</h3>
-                  <p>This is my first personal creation with many more exciting projects on the way!</p>
-                  <p>This website was created using React.</p>
+                    <h3>Personal Portfolio Page</h3>
+                    <p>This is my first personal creation with many more exciting projects on the way!</p>
+                    <p>This website was created using React.</p>
+                    <a href="https://github.com/iguy1/portfolio" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                 </div>
                 <div className="project-card">
-                  <h3>Loan Amortization Calculator</h3>
-                  <a
-                    href="https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Loan Amortization Calculator
-                  </a>
-                  <p>This was a school final project for my TypeScript class, written using a React-like framework.</p>
+                    <h3>Loan Amortization Calculator</h3>
+                    <p>This was a school final project for my TypeScript class, written using a React-like framework.</p>
+                    <a
+                        href="https://ud-f24-cisc181.github.io/final-project-phase-2-iguy1/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project
+                    </a>
                 </div>
                 <div className="project-card">
-                  <h3>Personal Photography Website</h3>
-                  <a
-                    href="https://iguy1.github.io/iguypictures"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Photography Website
-                  </a>
-                  <p>
-                    I created this React application to upload my personal photography ventures at the University of Delaware.
-                  </p>
+                    <h3>Personal Photography Website</h3>
+                    <p>I created this React application to upload my personal photography ventures at the University of Delaware.</p>
+                    <a
+                        href="https://iguy1.github.io/iguypictures"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project
+                    </a>
                 </div>
                 <div className="project-card">
-                  <h3>Society For Professional Computing</h3>
-                  <a
-                    href="https://iguy1.github.io/compsciclub"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Club Website
-                  </a>
-                  <p>
-                    I created this React application for a school club I recently joined. It provides an easy-to-navigate
-                    webpage for current members and people interested in joining.
-                  </p>
+                    <h3>Society For Professional Computing</h3>
+                    <p>I created this React application for a school club I recently joined. It provides an easy-to-navigate webpage for current members and people interested in joining.</p>
+                    <a
+                        href="https://iguy1.github.io/compsciclub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project
+                    </a>
                 </div>
-              
-              </div>
-            </section>
-          );
-        }
-        
-  
+                <div className="project-card">
+                    <h3>Mental Health App</h3>
+                    <p>A hackathon project focused on mental health and wellness, providing tools and resources for users to manage their mental well-being.</p>
+                    <a
+                        href="https://sprightly-starburst-efc9fc.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project
+                    </a>
+                </div>
+                <div className="project-card">
+                    <h3>GameHub</h3>
+                    <p>A platform for gamers to discover, play, and share games. Built with modern web technologies to provide an engaging gaming experience.</p>
+                    <a
+                        href="https://iguy1.github.io/gamehub/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+}
 
-
-
-export {NewPage,Languages,Vote,Projects};
+export { NewPage, Languages, Projects };
