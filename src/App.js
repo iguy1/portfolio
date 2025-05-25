@@ -18,7 +18,7 @@ function Home() {
         <div className="home-buttons">
           <Link to="/projects" className="btn">View My Projects</Link>
           <Link to="/languages" className="btn">My Skills</Link>
-          <a href="/Ian Guy Resume.pdf" className="btn download-btn" download>Download Resume</a>
+          <a href={process.env.PUBLIC_URL + "/Ian Guy Resume.pdf"} className="btn download-btn" download="Ian Guy Resume.pdf">Download Resume</a>
         </div>
         <img src={webdev} alt="Web Development" />
       </div>

@@ -109,6 +109,11 @@ function Languages(){
                     <img src={clionlogo} alt="CLion" />
                     <p>CLion</p>
                 </div>
+                <div className="tech-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Unity_2021.svg" alt="Unity" />
+            <p>Unity</p>
+                </div>
+
             </div>
             
             <h3>AI-Powered Development Tools</h3>
@@ -130,6 +135,18 @@ function Languages(){
                     <p>Git</p>
                 </div>
             </div>
+            
+            <h3>Operating Systems</h3>
+            <div className="tech-stack">
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="Linux" />
+                    <p>Linux</p>
+                </div>
+                <div className="tech-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1200px-Windows_logo_-_2012.svg.png" alt="Windows" />
+                    <p>Windows</p>
+                </div>
+            </div>
         </div>
     );
 }
@@ -145,6 +162,17 @@ function Projects() {
                     <p>This is my first personal creation with many more exciting projects on the way!</p>
                     <p>This website was created using React.</p>
                     <a href="https://github.com/iguy1/portfolio" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                <div className="project-card">
+                    <h3>Flappy Bird Clone</h3>
+                    <p>This was my first ever created game, I used Unity Game Engine to build it. I have always been very passionate about video games since I was kid. So this was insanely cool to me to create a game myself.</p>
+                    <a
+                        href="https://iguy1.itch.io/flappy-clone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project
+                    </a>
                 </div>
                 <div className="project-card">
                     <h3>Loan Amortization Calculator</h3>
